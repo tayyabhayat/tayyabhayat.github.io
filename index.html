@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Tayyab Hayat · Case studies</title>
+<meta name="description" content="Senior Software Engineer (PHP, Laravel, Shopify). Case studies: FunnelBridge, an order and subscription engine for 50,000+ customers, and the M&H Living Shopify Horizon storefront.">
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #ffffff; --ink: #1b1d1f; --muted: #5d636a;
+    --line: #e4e1da; --accent: #0b6e4f; --accent-soft: #e6f2ed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141618; --surface: #1c1f22; --ink: #ebe9e4; --muted: #a2a7ad;
+      --line: #2e3236; --accent: #4fc79a; --accent-soft: #1d2e27;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
+  header h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header .role { font-size: 1.1rem; margin: 0 0 4px; }
+  header .meta { color: var(--muted); margin: 0 0 18px; }
+  .links a { margin-right: 18px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  section { margin-top: 56px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--muted); margin: 0 0 6px; }
+  h2 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 14px; }
+  h3 { font-size: 1.05rem; margin: 30px 0 8px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 22px 0 6px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 1.45rem; line-height: 1.2; }
+  .stat span { color: var(--muted); font-size: .9rem; }
+  figure { margin: 26px 0 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
+  .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+  .core { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+  .t { fill: var(--ink); font: 600 15px system-ui, sans-serif; }
+  .s { fill: var(--muted); font: 12px system-ui, sans-serif; }
+  .ln { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+  ul { padding-left: 1.2em; } li { margin: 6px 0; }
+  .note { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; color: var(--muted); margin-top: 22px; }
+  .stack dt { font-weight: 600; margin-top: 10px; }
+  .stack dd { margin: 0; color: var(--muted); }
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Muhammad Tayyab Hayat</h1>
+  <p class="role">Senior Software Engineer · PHP &amp; Laravel · Shopify · WordPress</p>
+  <p class="meta">Rawalpindi, Pakistan (UTC+5) · Remote · 10+ years in production</p>
+  <p class="links">
+    <a href="https://www.linkedin.com/in/muhammadtayyabhayat">LinkedIn</a>
+    <a href="https://github.com/tayyabhayat">GitHub</a>
+  </p>
+</header>
+
+<section id="funnelbridge">
+  <p class="eyebrow">Case study 1 · Laravel, Stripe, Shopify</p>
+  <h2>FunnelBridge: order and subscription engine for 50,000+ customers</h2>
+  <p>I proposed, designed and built FunnelBridge, and have run it in production since November 2022. It sits between a US merchandise business's sales funnels, its billing and its fulfilment. Every customer who buys through the funnels is billed in Stripe and receives their order through Shopify because of it.</p>
+
+  <div class="stats">
+    <div class="stat"><b>50,000+</b><span>customers billed and fulfilled</span></div>
+    <div class="stat"><b>Six-figure</b><span>monthly sales flowing through it</span></div>
+    <div class="stat"><b>~260,000</b><span>webhook events in 30 days (2026)</span></div>
+    <div class="stat"><b>Since 2022</b><span>in production, 4 years</span></div>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 760 300" role="img" aria-label="ClickFunnels and Funnelish send order webhooks to FunnelBridge. FunnelBridge creates Stripe customers and subscriptions, receives Stripe invoice webhooks, and sends consolidated orders to Shopify while syncing products from it.">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor" style="color: var(--muted)"/>
+        </marker>
+      </defs>
+      <rect class="box" x="10" y="40" width="170" height="64" rx="8"/>
+      <text class="t" x="95" y="70" text-anchor="middle">ClickFunnels</text>
+      <text class="s" x="95" y="90" text-anchor="middle">order webhooks</text>
+      <rect class="box" x="10" y="196" width="170" height="64" rx="8"/>
+      <text class="t" x="95" y="226" text-anchor="middle">Funnelish</text>
+      <text class="s" x="95" y="246" text-anchor="middle">order webhooks</text>
+
+      <rect class="core" x="275" y="95" width="210" height="110" rx="10"/>
+      <text class="t" x="380" y="138" text-anchor="middle">FunnelBridge</text>
+      <text class="s" x="380" y="160" text-anchor="middle">Laravel 12 · PHP 8.4 · MySQL</text>
+      <text class="s" x="380" y="178" text-anchor="middle">classify · bill · consolidate</text>
+
+      <rect class="box" x="580" y="40" width="170" height="64" rx="8"/>
+      <text class="t" x="665" y="70" text-anchor="middle">Stripe</text>
+      <text class="s" x="665" y="90" text-anchor="middle">customers · subscriptions</text>
+      <rect class="box" x="580" y="196" width="170" height="64" rx="8"/>
+      <text class="t" x="665" y="226" text-anchor="middle">Shopify</text>
+      <text class="s" x="665" y="246" text-anchor="middle">orders · products</text>
+
+      <path class="ln" d="M180,72 C230,72 230,125 273,125" marker-end="url(#ar)"/>
+      <path class="ln" d="M180,228 C230,228 230,175 273,175" marker-end="url(#ar)"/>
+      <path class="ln" d="M485,115 C530,115 530,64 578,64" marker-end="url(#ar)"/>
+      <path class="ln" d="M578,84 C540,84 540,135 487,135" marker-end="url(#ar)"/>
+      <text class="s" x="530" y="30" text-anchor="middle">subscriptions, rebill dates →</text>
+      <text class="s" x="560" y="168" text-anchor="middle">← invoice webhooks</text>
+      <path class="ln" d="M485,175 C530,175 530,220 578,220" marker-end="url(#ar)"/>
+      <path class="ln" d="M578,244 C530,244 520,195 487,190" marker-end="url(#ar)"/>
+      <text class="s" x="530" y="284" text-anchor="middle">consolidated orders → · ← product sync</text>
+    </svg>
+    <figcaption>How orders and rebills move through FunnelBridge. Redrawn for this page; no client code or data is shown.</figcaption>
+  </figure>
+
+  <h3>What it does</h3>
+  <ul>
+    <li><strong>Classifies every order.</strong> Each product is a single item, a bundle or a subscription. Unknown products raise an alert and hold that customer's orders, so nothing ships wrong.</li>
+    <li><strong>Creates Stripe subscriptions</strong> with a calculated first rebill date (a set number of days, or a fixed day of the month).</li>
+    <li><strong>Consolidates Shopify orders.</strong> Paid orders are grouped per customer and funnel into one Shopify order with the right line items, shipping and tags.</li>
+    <li><strong>Ships the right bundle on every rebill.</strong> When a Stripe invoice is paid, the customer's step in the subscription schedule decides which bundle goes to Shopify.</li>
+    <li><strong>Recovers on its own.</strong> A catch-up job retries anything left unsent, and products sync from Shopify twice a day.</li>
+  </ul>
+
+  <h3>Results</h3>
+  <ul>
+    <li>Cut unsent invoices per run from 5,000+ to under 50 (2025).</li>
+    <li>Tracked down the root cause of duplicate Shopify orders (2025).</li>
+    <li>Upgraded the app from PHP 8.0 / Laravel 8 to PHP 8.4 / Laravel 12 (2025).</li>
+    <li>Moved API keys and settings into the database so the app could be cloned, then cloned it into two more instances (2025).</li>
+  </ul>
+
+  <p class="note">FunnelBridge is private client software, so there is no code or data here. I'm happy to walk through its architecture live.</p>
+</section>
+
+<section id="mandh">
+  <p class="eyebrow">Case study 2 · Shopify Online Store 2.0</p>
+  <h2>M&amp;H Living: Shopify Horizon storefront</h2>
+  <p>I rebuilt this UK furniture retailer's storefront on Shopify's Horizon theme, as a freelancer through the DevCrabs agency. See it live at <a href="https://mandhliving.co.uk">mandhliving.co.uk</a>.</p>
+  <ul>
+    <li><strong>Product pages from metafields and metaobjects:</strong> sofa-set cross-sells, accessory bundle pricing, fabric swatches, seat-firmness upgrades and delivery lead times carried into the cart.</li>
+    <li><strong>Cart and theme APIs:</strong> Cart AJAX API, Section Rendering API and line-item properties, built on Horizon's component framework.</li>
+    <li><strong>Admin GraphQL automation toolkit (Node.js):</strong> dry-run by default, with reports and backups. Used to launch new product lines and redirects, and to set up and roll back seasonal sales across 160+ products.</li>
+    <li><strong>Also:</strong> JSON-LD structured data, consent-aware tracking through the Customer Privacy API, and a prototype Shopify Functions discount app with unit tests.</li>
+  </ul>
+</section>
+
+<section id="stack">
+  <p class="eyebrow">Stack</p>
+  <h2>What I work with</h2>
+  <dl class="stack">
+    <dt>Backend</dt><dd>PHP 8.4, Laravel 12 (13 rewrite in progress), MySQL, REST and webhook integrations, Stripe, Twilio, OpenAI API</dd>
+    <dt>Shopify</dt><dd>Liquid, Online Store 2.0, Horizon, metafields and metaobjects, Admin GraphQL API, Shopify CLI, Shopify Functions</dd>
+    <dt>WordPress</dt><dd>Custom themes and plugins, WooCommerce, 180+ sites administered</dd>
+    <dt>Frontend</dt><dd>JavaScript, Vue.js</dd>
+    <dt>Tools</dt><dd>Git, Claude Code, Cursor</dd>
+  </dl>
+</section>
+
+<footer>Muhammad Tayyab Hayat · Rawalpindi, Pakistan · <a href="https://www.linkedin.com/in/muhammadtayyabhayat">LinkedIn</a></footer>
+
+</div>
+</body>
+</html>
